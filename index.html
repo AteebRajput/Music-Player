@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <section class="main">
+        <div class="container box">
+            <div class="music">
+                <!-- Music player -->
+                <div class="music-player">
+                    <!-- Header -->
+                    <div class="header">
+                        <button class="icon-btn" ><i class="fas fa-music"></i></button>
+                        <h2>Now Playing</h2>
+                        <button class="icon-btn" id="toggle-playlist"><i class="fas fa-bars"></i></button>
+                    </div>
+                    <!-- Song Details -->
+                    <div class="details">
+                        <img src="./images/images.jpg" class="track-image " id="track-image" alt="Track Image">
+                        <div class="music-lines">
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+                            <div class="motion"></div>
+
+                        </div>
+                        <div class="name">
+                            <p id="title" class="title">Song Title</p>
+                            <p id="artist" class="artist">Artist Name</p>
+                        </div>
+                    
+
+                    </div>
+                    <!-- Player Controls -->
+                    <div class="controls">
+                        <div class="song-timer">
+                            <span id="current-time" class="current-time">00:12</span>
+                            <!-- Song duration -->
+                            <div class="duration">
+                                <input type="range" id="duration-slider" class="duration-slider" min="0" max="100" value="0" />
+                            </div>
+                            <span id="duration-time" class="duration-time">04:10</span>
+                        </div>
+
+                        <!-- Buttons - Play, next and Prev -->
+                        <div class="buttons">
+                            <button class="prev" id="prev">
+                                <i class="fas fa-step-backward"></i>
+                            </button>
+                            <button class="play" id="play">
+                                <i class="fas fa-play"></i></button>
+                            <button class="next" id="next">
+                                <i class="fas fa-step-forward"></i>
+                            </button>
+                        </div>
+                        <!-- Autoplay -->
+                        <button class="play-all" id="play-all">
+                            Play All <i class="fas fa-sync-alt"></i>
+                        </button>
+                        <!-- Volume -->
+                        <div class="volume">
+                            <p id="show-volume">65%</p>
+                            <i class="fas fa-volume-high" id="volume-icon"></i>
+                            <input type="range" id="volume" min="0" max="100" value="50" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PlayList -->
+                <div class="music-playlist" id="playlist">
+                    <!-- Header -->
+                    <div class="header playlist-header">
+                        <button class="icon-btn"><i class="fas fa-music"></i></button>
+                        <h2>Playlist</h2>
+                        <button class="icon-btn"><i class="fas fa-times" id="close-playlist"></i></button>
+                    </div>
+                    <!-- Playlist Item -->
+                    <div class="playlist-div" id="playlist-div">
+                        <div class="playlist">
+                            <span class="song-index">1</span>
+                            <p class="single-song">Song one</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./srcipt.js"></script>
+</body>
+
+</html>
